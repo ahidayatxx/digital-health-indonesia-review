@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The State of Digital Health in Indonesia</title>
+    <meta name="description"
+        content="A Scoping Review of Progress and Barriers for Digital Health Transformation in Indonesia">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="fade-up">
+                <div class="badge">Scoping Review</div>
+                <h1>The State of Digital Health in <span>Indonesia</span></h1>
+                <h2 class="subtitle">A Scoping Review of Progress and Barriers</h2>
+                <p class="description">
+                    Indonesia is navigating a major digital health transformation led by the <strong>SATUSEHAT
+                        initiative</strong>. This review identifies thematic trends and structural challenges across
+                    five domains, highlighting the gap between policy ambition and facility-level readiness.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i data-lucide="target"></i>
+                        <span>2030 Universal Health Coverage Goals</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scope-card" data-animate="slide-in-right">
+                <div class="scope-header">
+                    <h3>Review Scope</h3>
+                    <div class="funnel-icon">
+                        <i data-lucide="filter"></i>
+                    </div>
+                </div>
+
+                <div class="scope-steps">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i data-lucide="file-search"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">287</span>
+                            <h4>Articles Retrieved</h4>
+                            <p>Initial searches identified nearly 300 candidate studies published between 2019 and 2025 across five thematic clusters.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-connector">
+                        <i data-lucide="arrow-down"></i>
+                    </div>
+
+                    <div class="step step-final">
+                        <div class="step-icon success">
+                            <i data-lucide="file-check-2"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number highlight">53</span>
+                            <h4>Articles Synthesized</h4>
+                            <p>Over 50 high-quality peer-reviewed publications and preprints met the criteria for final
+                                analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Thematic Findings -->
+    <section class="thematic-findings section-padding">
+        <div class="container">
+            <div class="section-heading" data-animate="fade-up">
+                <h2>Core Thematic Findings</h2>
+                <p>Key structural challenges observed at the facility level</p>
+            </div>
+
+            <div class="findings-grid">
+                <!-- Finding 1 -->
+                <div class="finding-card" data-animate="fade-up" style="transition-delay: 0.1s">
+                    <div class="card-icon"><i data-lucide="building-2"></i></div>
+                    <h3>Low Infrastructure Readiness</h3>
+                    <p class="card-desc">Puskesmas average a 2.74/5 ICT maturity score and manage ~30 different systems.
+                    </p>
+
+                    <div class="metrics-list">
+                        <div class="metric">
+                            <span class="metric-val">2.74/5.0</span>
+                            <span class="metric-label">ICT Maturity Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">~30</span>
+                            <span class="metric-label">Discrete Systems/Puskesmas</span>
+                        </div>
+                        <div class="metric highlight-alert">
+                            <span class="metric-val">9.46%</span>
+                            <span class="metric-label">Facilities Without Internet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finding 2 -->
+                <div class="finding-card" data-animate="fade-up" style="transition-delay: 0.2s">
+                    <div class="card-icon"><i data-lucide="network"></i></div>
+                    <h3>Interoperability Hurdles</h3>
+                    <p class="card-desc">The SATUSEHAT platform faces technical challenges in mapping legacy data to
+                        FHIR standards.</p>
+
+                    <ul class="feature-list">
+                        <li><i data-lucide="database"></i> Legacy Data Mapping</li>
+                        <li><i data-lucide="layers"></i> SATUSEHAT Platform Integration</li>
+                        <li><i data-lucide="code-2"></i> FHIR Standards Compliance</li>
+                    </ul>
+                </div>
+
+                <!-- Finding 3 -->
+                <div class="finding-card" data-animate="fade-up" style="transition-delay: 0.3s">
+                    <div class="card-icon"><i data-lucide="monitor-smartphone"></i></div>
+                    <h3>The Telemedicine Divide</h3>
+                    <p class="card-desc">Adoption is growing but limited by connectivity, literacy, and a preference for
+                        telephone consultations.</p>
+
+                    <ul class="feature-list">
+                        <li><i data-lucide="wifi-off"></i> Connectivity Issues</li>
+                        <li><i data-lucide="book-open"></i> Digital Literacy Barriers</li>
+                        <li><i data-lucide="phone-call"></i> Preference for Phone Calls</li>
+                    </ul>
+                </div>
+
+                <!-- Finding 4 -->
+                <div class="finding-card" data-animate="fade-up" style="transition-delay: 0.4s">
+                    <div class="card-icon"><i data-lucide="shield-alert"></i></div>
+                    <h3>Data Governance Gaps</h3>
+                    <p class="card-desc">Despite the 2022 PDPA, specialized frameworks for secondary health data use are
+                        missing.</p>
+
+                    <ul class="feature-list">
+                        <li><i data-lucide="file-lock-2"></i> PDPA 2022 Implementation</li>
+                        <li><i data-lucide="database-zap"></i> Secondary Health Data Use</li>
+                        <li><i data-lucide="clipboard-x"></i> Missing Specialized Frameworks</li>
+                    </ul>
+                </div>
+
+                <!-- Finding 5 -->
+                <div class="finding-card" data-animate="fade-up" style="transition-delay: 0.5s">
+                    <div class="card-icon"><i data-lucide="activity-square"></i></div>
+                    <h3>Value-Based Healthcare Integration</h3>
+                    <p class="card-desc">Integrated care for rising multimorbidity (10%) remains fragmented despite universal health coverage structures.</p>
+
+                    <ul class="feature-list">
+                        <li><i data-lucide="users"></i> Multimorbidity Burden</li>
+                        <li><i data-lucide="book-open-check"></i> Need for Built-in Implementation Science</li>
+                        <li><i data-lucide="scan-line"></i> Fragmentation in JKN Architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Priorities / Mind the Gap -->
+    <section class="research-priorities section-padding">
+        <div class="container">
+            <div class="bridge-layout">
+                <div class="bridge-header" data-animate="fade-up">
+                    <div class="badge primary">Mind the Gap</div>
+                    <h2>Research Priorities for Indonesia's Digital Health Transformation</h2>
+                    <p>Addressing nine critical research gaps to bridge the evidence divide and achieve Indonesia's 2030
+                        Universal Health Coverage goals.</p>
+                </div>
+
+                <div class="gap-container">
+                    <div class="context-panel" data-animate="fade-right">
+                        <h4>Current State</h4>
+                        <p>Mismatch between digital policy (SATUSEHAT) and research evidence. Ambitious Policy vs
+                            Evidence Gap.</p>
+                    </div>
+
+                    <div class="gaps-visualization">
+                        <!-- Foundational Gaps -->
+                        <div class="gap-tier foundational" data-animate="fade-up">
+                            <h3 class="tier-title"><i data-lucide="layers"></i> Foundational Gaps <span class="priority immediate">Immediate Priority</span></h3>
+                            <div class="gap-items-row pillars">
+                                <div class="gap-item pillar">
+                                    <div class="icon-circle"><i data-lucide="map"></i></div>
+                                    <h4>Absence of Implementation Science</h4>
+                                    <p>Fewer than 5% of studies use structured frameworks to explain how digital tools succeed.</p>
+                                </div>
+                                <div class="gap-item pillar">
+                                    <div class="icon-circle"><i data-lucide="stethoscope"></i></div>
+                                    <h4>Missing Clinical Outcomes Data</h4>
+                                    <p>Evidence focuses on user satisfaction rather than actual improvements in patient health outcomes.</p>
+                                </div>
+                                <div class="gap-item pillar">
+                                    <div class="icon-circle"><i data-lucide="scale"></i></div>
+                                    <h4>Unmeasured Digital Inequity</h4>
+                                    <p>Research lacks health equity analysis regarding geographic and socioeconomic disparities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Systemic Gaps -->
+                        <div class="gap-tier systemic" data-animate="fade-up" style="transition-delay: 0.2s">
+                            <h3 class="tier-title"><i data-lucide="activity"></i> Systemic & Emerging Gaps <span class="priority">High to Medium Priority</span></h3>
+                            <div class="gap-items-row">
+                                <div class="gap-item box">
+                                    <div class="icon"><i data-lucide="blocks"></i></div>
+                                    <h4>Fragmented Info Systems</h4>
+                                    <p>Clinics manage 30+ separate systems; the economic cost of this inefficiency is unknown</p>
+                                </div>
+                                <div class="gap-item box">
+                                    <div class="icon"><i data-lucide="wifi-off"></i></div>
+                                    <h4>Low ICT Maturity</h4>
+                                    <p>Average ICT maturity is only 2.74/5.0, hindering advanced data sharing in rural areas</p>
+                                </div>
+                                <div class="gap-item box">
+                                    <div class="icon"><i data-lucide="gavel"></i></div>
+                                    <h4>Specialized Governance</h4>
+                                    <p>Urgent need for health-specific data laws, workforce digital training, and mental health services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Focus Table -->
+            <div class="future-focus" data-animate="fade-up">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Future Focus: Critical Areas for Next Generation Research</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Research Gap Area</th>
+                                <th>Policy Urgency</th>
+                                <th>Recommended Focus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="td-content">
+                                        <i data-lucide="settings"></i>
+                                        <span>Implementation Frameworks</span>
+                                    </div>
+                                </td>
+                                <td><span class="urgency critical">Critical</span></td>
+                                <td>SATUSEHAT adoption in rural clinics</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="td-content">
+                                        <i data-lucide="heart-pulse"></i>
+                                        <span>Clinical Effectiveness</span>
+                                    </div>
+                                </td>
+                                <td><span class="urgency critical">Critical</span></td>
+                                <td>Telemedicine for chronic diseases</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="td-content">
+                                        <i data-lucide="lock"></i>
+                                        <span>Data Governance</span>
+                                    </div>
+                                </td>
+                                <td><span class="urgency high">High</span></td>
+                                <td>Operationalizing the PDPA for health data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Generated based on "The State of Digital Health in Indonesia" Scoping Review.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
